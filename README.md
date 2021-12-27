@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Serving WordPress API Back-end
+
+Run `docker-compose up -d` to pull the containers for Worddpress and MySQL. Navigate to `http://localhost:8000/` and start the automated installation of the WordPress API.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
