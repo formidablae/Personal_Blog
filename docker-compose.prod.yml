@@ -3,8 +3,9 @@ version: "3.9"
 services:
   db:
     image: mysql:5.7
+    container_name: db_prod
     volumes:
-      - db_data:/var/lib/mysql
+      - db_data_prod:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -16,6 +17,7 @@ services:
     depends_on:
       - db
     image: wordpress:latest
+    container_name: wordpress_prod
     volumes:
       - wordpress_data:/var/www/html
     ports:
@@ -28,5 +30,5 @@ services:
       WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
 
 volumes:
-  db_data: {}
+  db_data_prod: {}
   wordpress_data: {}

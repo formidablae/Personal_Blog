@@ -1,4 +1,4 @@
 export const environment = {
-  production: true,
+  production: false,
   WORDPRESS_REST_URL: 'http://localhost:8000/',
 };
