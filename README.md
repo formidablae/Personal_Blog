@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Serving WordPress API Back-end
 
-Run `docker-compose up -d` to pull the containers for Worddpress and MySQL. Navigate to `http://localhost:8000/` and start the automated installation of the WordPress API.
+Run `docker-compose up -d` to pull the containers for Wordpress and MySQL. Navigate to `http://localhost:8000/` and start the automated installation of the WordPress API.
 
 ## Code scaffolding
 
