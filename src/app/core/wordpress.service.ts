@@ -11,7 +11,7 @@ const POSTS_URL = 'posts';
   providedIn: 'root'
 })
 export class WordpressService {
-  posts: IPost[];
+  posts!: IPost[];
   post$: Subject<IPost> = new Subject();
 
 
