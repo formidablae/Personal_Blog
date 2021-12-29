@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of, Subject, tap } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
+import { tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { IPost } from '../post.model';
 
 
-const POSTS_URL = 'posts';
+const POSTS_URL = '?rest_route=/wp/v2/posts';
 
 @Injectable({
   providedIn: 'root'
