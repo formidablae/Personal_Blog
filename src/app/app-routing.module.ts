@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
@@ -31,10 +32,11 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    QuicklinkModule,
     RouterModule.forRoot(
       routes,
       {
-        preloadingStrategy: PreloadAllModules,
+        preloadingStrategy: QuicklinkStrategy,
       },
     )
   ],
