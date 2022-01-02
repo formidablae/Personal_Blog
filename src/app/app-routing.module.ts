@@ -18,12 +18,12 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: '**',
-    component: HomeComponent,
-  },
-  {
     path: 'post/:id/:slug',
     loadChildren: () => import('./post/post.module').then(m => m.PostModule),
+  },
+  {
+    path: '**',
+    component: HomeComponent,
   },
 ];
 
