@@ -1,4 +1,4 @@
 <pb-header></pb-header>
-<div class="route-container">
-  <router-outlet></router-outlet>
+<div class="route-container" [@routerTransition]="getOutlet(rtroutlet)">
+  <router-outlet #rtroutlet="outlet"></router-outlet>
 </div>

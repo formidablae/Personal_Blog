@@ -14,14 +14,23 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
+    data: {
+      routeState: '1',
+    },
   },
   {
     path: 'about',
     component: AboutComponent,
+    data: {
+      routeState: '2',
+    },
   },
   {
     path: 'post/:id/:slug',
     loadChildren: () => import('./post/post.module').then(m => m.PostModule),
+    data: {
+      routeState: '3',
+    },
   },
   {
     path: '**',
