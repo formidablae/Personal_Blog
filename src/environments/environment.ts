@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  staging: true,
+  qa: false,
   WORDPRESS_REST_URL: 'http://localhost:8000/',
 };
 

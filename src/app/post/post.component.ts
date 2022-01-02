@@ -16,14 +16,16 @@ export class PostComponent implements OnInit {
     private wordpressService: WordpressService,
   ) {
     this.wordpressService.post$.subscribe(data => {
+      // console.log("PostComponent constructor executed");
       this.post = data;
     });
   }
 
   ngOnInit(): void {
+    // console.log("PostComponent ngOnInit executed");
     this.route.params.subscribe(params => {
+      // console.log("PostComponent ngOnInit route params subscribed:", params);
       this.wordpressService.getPost(params['postId']);
     });
   }
-
 }

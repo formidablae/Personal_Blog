@@ -13,4 +13,9 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PostRoutingModule { }
+export class PostRoutingModule {
+
+  // constructor() {
+  //   console.log("Entered PostRoutingModule");
+  // }
+}

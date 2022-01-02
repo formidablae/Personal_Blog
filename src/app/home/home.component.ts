@@ -9,9 +9,12 @@ import { WordpressService } from '../core/wordpress.service';
 export class HomeComponent implements OnInit {
   posts$ = this.wordpressService.getPosts();
 
-  constructor(private wordpressService: WordpressService) { }
+  constructor(private wordpressService: WordpressService) {
+    // console.log("HomeComponent constructor executed");
+  }
 
   ngOnInit(): void {
+    // console.log("HomeComponent ngOnInit executed");
   }
 
 }
