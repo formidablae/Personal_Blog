@@ -25,7 +25,7 @@ export class PostComponent implements OnInit {
     // console.log("PostComponent ngOnInit executed");
     this.route.params.subscribe(params => {
       // console.log("PostComponent ngOnInit route params subscribed:", params);
-      this.wordpressService.getPost(params['postId']);
+      this.wordpressService.getPost(params['id']);
     });
   }
 }
