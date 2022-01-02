@@ -33,7 +33,7 @@ Run `docker-compose -f docker-compose.prod.yml up -d` for a prod server.
 
 ## Back-end WordPress API Testing server
 
-Run `docker-compose -f docker-compose.prod.yml up -d` for a testing server.
+Run `docker-compose -f docker-compose.qa.yml up -d` for a testing server.
 
 ## Visual state of the project
 
