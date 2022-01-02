@@ -37,6 +37,4 @@ Run `docker-compose -f docker-compose.qa.yml up -d` for a testing server.
 
 ## Visual state of the project
 
-<img src="./images/screenshot.png" />
-
-<img src="./images/screenshot_of_post.png" />
+<img src="./images/animated_preview.gif" />
