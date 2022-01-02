@@ -11,4 +11,9 @@ import { NgModule } from '@angular/core';
     HttpClientModule,
   ]
 })
-export class CoreModule { }
+export class CoreModule {
+
+  // constructor() {
+  //   console.log("Entered CoreModule");
+  // }
+}

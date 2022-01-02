@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'personal-blog';
+
+  // constructor() {
+  //   console.log("Entered AppComponent");
+  // }
 }

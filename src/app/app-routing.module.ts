@@ -18,6 +18,10 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
+    path: 'post/:id/:slug',
+    loadChildren: () => import('./post/post.module').then(m => m.PostModule),
+  },
+  {
     path: '**',
     component: HomeComponent,
   },
@@ -27,4 +31,9 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+  // constructor() {
+  //   console.log("Entered AppRoutingModule");
+  // }
+}
