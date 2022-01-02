@@ -37,3 +37,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Visual state of the project:
 
 <img src="./images/screenshot.png" />
+
+<img src="./images/screenshot_of_post.png" />
